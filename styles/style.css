@@ -3,8 +3,8 @@
 :root {
     --main-color: black;
     --pink: pink;
-    --bg: white;
-    --border: .1rem solid rgba(255, 255, 255, .3);
+    --bg: #f7f3e9;
+    --border: .2rem solid #777;
 }
 
 * {
@@ -222,8 +222,8 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../imgs/download.jpg) no-repeat;
-   
+    background: url(../imgs/logo.jpg) no-repeat;
+
     background-position: center;
 }
 
@@ -286,7 +286,7 @@ section {
 .menu .box-container .box {
     padding: 5rem;
     text-align: center;
-    border: var(--border);
+
 }
 
 .menu .box-container .box img {
@@ -312,6 +312,7 @@ section {
 }
 
 .menu .box-container .box:hover {
+    border: var(--border);
     background: #888;
 }
 
@@ -327,8 +328,13 @@ section {
 
 .products .box-container .box {
     text-align: center;
-    border: var(--border);
+
     padding: 2rem;
+}
+
+.products .box-container .box:hover {
+    border: var(--border);
+    background: #888;
 }
 
 .products .box-container .box .icons a {
@@ -342,7 +348,8 @@ section {
 }
 
 .products .box-container .box .icons a:hover {
-    background: var(--main-color);
+    border: var(--border);
+    background: #888;
 }
 
 .products .box-container .box .image {
@@ -378,94 +385,10 @@ section {
     font-size: 1.5rem;
 }
 
-.review .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.review .box-container .box {
-    border: var(--border);
-    text-align: center;
-    padding: 3rem 2rem;
-}
-
-.review .box-container .box p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: black;
-    padding: 2rem 0;
-}
-
-.review .box-container .box .user {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.review .box-container .box h3 {
-    padding: 1rem 0;
-    font-size: 2rem;
-    color: black;
-}
-
-.review .box-container .box .stars i {
-    font-size: 1.5rem;
-    color: var(--main-color);
-}
-
-.contact .row {
-    display: flex;
-    background: var(--pink);
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.contact .row .map {
-    flex: 1 1 45rem;
-    width: 50%;
-    object-fit: cover;
-}
-
-.contact .row form {
-    flex: 1 1 45rem;
-    padding: 2rem 2rem;
-    text-align: center;
-}
-
-.contact .row form h3 {
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    color: black;
-}
-
-.contact .row form .inputBox {
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-    background: var(--bg);
-    border: var(--border);
-}
-
-.contact .row form .inputBox span {
-    color: black;
-    font-size: 2rem;
-    padding-left: 2rem;
-}
-
-.contact .row form .inputBox input {
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.7rem;
-    color: black;
-    text-transform: none;
-    background: none;
-}
 
 
 .footer {
+    width: 100%;
     background: var(--pink);
     text-align: center;
 }
@@ -481,7 +404,7 @@ section {
     font-size: 2rem;
     color: black;
     border: var(--border);
-    margin: .3rem;
+    margin: 1rem;
     border-radius: 50%;
 }
 
