@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="cart.css" />
+    <title>Melos Confeitaria</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="cart.css" />
   </head>
   <body>
-    <header>
-      <span><b>Melos Confeitaria</b></span>
+    <header class="header">
+      <a href="../index.html" class="logo"> <img src="../imgs/logo.png " /> </a>
     </header>
     <main>
       <div class="page-title">Seu Carrinho</div>
@@ -33,7 +38,7 @@
               <tr>
                 <td>
                   <div class="product">
-                    <img src="https://picsum.photos/100/120" alt="" />
+                    <img src="https://picsum.photos/100/120" alt />
                     <div class="info">
                       <div class="name">Nome do produto</div>
                       <div class="category">Categoria</div>
@@ -56,7 +61,7 @@
               <tr>
                 <td>
                   <div class="product">
-                    <img src="https://picsum.photos/100/120" alt="" />
+                    <img src="https://picsum.photos/100/120" alt />
                     <div class="info">
                       <div class="name">Nome do produto</div>
                       <div class="category">Categoria</div>
@@ -79,7 +84,7 @@
               <tr>
                 <td>
                   <div class="product">
-                    <img src="https://picsum.photos/100/120" alt="" />
+                    <img src="https://picsum.photos/100/120" alt />
                     <div class="info">
                       <div class="name">Nome do produto</div>
                       <div class="category">Categoria</div>
@@ -120,13 +125,10 @@
               <span>R$ 418</span>
             </footer>
           </div>
-          <button>Finalizar Compra</button>
+          <button class="button">Finalizar Compra</button>
         </aside>
       </div>
     </main>
-
-    <footer>
-        
-    </footer>
+    <footer></footer>
   </body>
 </html>
