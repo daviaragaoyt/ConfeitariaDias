@@ -8,7 +8,7 @@ carrinho.map((item) => {
   tabelaCarrinho.innerHTML += `<tr>
     <td>
       <div class="product">
-        <img style="width: 50%; heigth:50%;   " src=${item.imgUrl} />
+        <img style="width:150px; heigth:150px;   " src=${item.imgUrl} />
         <div class="info">
           <div class="name">${item.nome}</div>
           <div class="category">Categoria</div>
