@@ -18,9 +18,9 @@ carrinho.map((item) => {
     <td>${item.preco}</td>
     <td>
       <div class="qty">
-        <button><i class="bx bx-minus"></i></button>
+        <button class="menos"><i class="bx bx-minus"></i></button>
         <span>${item.quantidade}</span>
-        <button><i class="bx bx-plus"></i></button>
+        <button class="mais"><i class="bx bx-plus"></i></button>
       </div>
     </td>
     <td></td>
@@ -29,3 +29,4 @@ carrinho.map((item) => {
     </td>
   </tr>`;
 });
+
