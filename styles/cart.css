@@ -20,14 +20,17 @@
     justify-content: space-between;
     padding: 1.5rem 7%;
     border-bottom: var(--border);
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
+    z-index: 1000;
+    height: 5rem;
 }
 
 .header .logo img {
     height: 5rem;
+    top: 0;
 }
 
 body {
@@ -276,6 +279,7 @@ aside>button:hover {
     transition: 0.7s;
 }
 
+
 /*# sourceMappingURL=styles.css.map */
 
 @media screen and (max-width:768px) {
@@ -286,8 +290,5 @@ aside>button:hover {
         max-width: 100%;
     }
 
-    .footer {
-        width: 50rem;
-    }
 
 }
