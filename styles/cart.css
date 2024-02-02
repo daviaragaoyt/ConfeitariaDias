@@ -83,6 +83,10 @@ button {
     font-family: 'Lato', sans-serif;
 }
 
+a {
+    color: var(--main-color);
+}
+
 table {
 
     width: 100%;
@@ -290,5 +294,20 @@ aside>button:hover {
         max-width: 100%;
     }
 
+    main {
 
+        align-items: center;
+        text-align: center;
+    }
+
+    button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header {
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+    }
 }

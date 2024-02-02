@@ -31,7 +31,6 @@ function criaTabela() {
         </button>
       </div>
     </td>
-    <td></td>
     <td>
       <button onclick="removerProduto(${item.idProduto})" class="remove"><i class="bx bx-x"></i></button>
     </td>
