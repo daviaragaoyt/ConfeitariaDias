@@ -1,7 +1,7 @@
 const catalogo = document.getElementById("containerCatalogo"); //Variavel que busca os elementos do "containerCatalogo"
 
 const produtos = [
-    //Variavel Array com suas propriedades
+    //Array com objetos dentro com suas propriedades
     {
         idProduto: 0,
         nome: "Brigadeiro tradicional",
