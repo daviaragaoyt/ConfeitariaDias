@@ -55,7 +55,7 @@ body {
 }
 
 .container:hover {
-	box-shadow: 0 0 15px var(--bg);
+	box-shadow: 0 0 15px var(--main-color);
 	text-shadow: 0 0 15px var(--bg);
 	transition: 0.7s;
 	border: 5px main-color;
@@ -127,7 +127,7 @@ body {
 }
 
 .overlay__panel {
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(100%);
 	transition: all 0.5s ease-in-out;
 	align-items: center;
 	display: flex;
@@ -170,7 +170,7 @@ body {
 }
 
 .btn {
-	background-color: var(--bg);
+	background-color: var(--pink);
 	border-radius: 30px;
 	border: 2px solid var(--border);
 	color: var(--main-color);
@@ -184,13 +184,15 @@ body {
 }
 
 .btn:hover {
+	
 	box-shadow: 0 0 15px var(--main-color);
-	text-shadow: 0 0 15px var(--pink);
+	text-shadow: 0 0 15px var(--bg);
 	transition: 0.7s;
 	
 }
 
 .form>.btn {
+	background-color:var(--bg);
 	margin-top: 1.5rem;
 }
 
