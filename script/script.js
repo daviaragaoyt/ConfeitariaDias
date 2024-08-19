@@ -6,70 +6,70 @@ const produtos = [
         idProduto: 0,
         nome: "Brigadeiro tradicional",
         preco: 2.99,
-        imgUrl: "imgs/brigadeiro.webp",
+        imgUrl: "../imgs/brigadeiro.webp",
         quantidade: 1,
     },
     {
         idProduto: 1,
         nome: "Brigadeiro/Maracujá",
         preco: 2.99,
-        imgUrl: "imgs/maracuja.jpg",
+        imgUrl: "../imgs/maracuja.jpg",
         quantidade: 1,
     },
     {
         idProduto: 2,
         nome: "Brigadeiro de ninho",
         preco: 2.99,
-        imgUrl: "imgs/ninhocomnutella.jpg",
+        imgUrl: "../imgs/ninhocomnutella.jpg",
         quantidade: 1,
     },
     {
         idProduto: 3,
         nome: "Brigadeiro de Limão",
         preco: 2.99,
-        imgUrl: "imgs/limao.jpeg",
+        imgUrl: "../imgs/limao.jpeg",
         quantidade: 1,
     },
     {
         idProduto: 4,
         nome: "Tortas",
         preco: 2.99,
-        imgUrl: "imgs/tortas.webp",
+        imgUrl: "../imgs/tortas.webp",
         quantidade: 1,
     },
     {
         idProduto: 5,
         nome: "Brownie",
         preco: 2.99,
-        imgUrl: "imgs/brownie.jpg",
+        imgUrl: "../imgs/brownie.jpg",
         quantidade: 1,
     },
     {
         idProduto: 6,
         nome: "Brigadeiro tradicional",
         preco: 2.99,
-        imgUrl: "imgs/brigadeiro.webp",
+        imgUrl: "../imgs/brigadeiro.webp",
         quantidade: 1,
     },
     {
         idProduto: 7,
         nome: "Brigadeiro tradicional",
         preco: 2.99,
-        imgUrl: "imgs/brigadeiro.webp",
+        imgUrl: "../imgs/brigadeiro.webp",
         quantidade: 1,
     },
     {
         idProduto: 8,
         nome: "Brigadeiro tradicional",
         preco: 2.99,
-        imgUrl: "imgs/brigadeiro.webp",
+        imgUrl: "../imgs/brigadeiro.webp",
         quantidade: 1,
     },
     {
         idProduto: 9,
         nome: "Brigadeiro tradicional",
         preco: 2.99,
-        imgUrl: "imgs/brigadeiro.webp",
+        imgUrl: "../imgs/brigadeiro.webp",
         quantidade: 1,
     },
 ];
@@ -81,7 +81,7 @@ produtos.map((item) => {
     <h3>${item.nome}</h3>
     <div class="price">R$ ${item.preco}</div>
     <button onclick='adicionarCarrinho(${item.idProduto}, "catalago1")' id="candy2" type="submit" class="btn">
-        <a href="cart.html">Adicionar ao carrinho</a>
+        <a href="../cart.html">Adicionar ao carrinho</a>
     </button>
 </div>`;
 });
@@ -129,21 +129,21 @@ const outrosProdutos = [
         idProduto: 0,
         nome: "Brigadeiro de Café",
         preco: "24,99",
-        imgUrl: "imgs/cafe.jpg",
+        imgUrl: "../imgs/cafe.jpg",
         quantidade: 1,
     },
     {
         idProduto: 1,
         nome: "Brownie com sorvete",
         preco: "32,51",
-        imgUrl: "imgs/browniesorvete.jpg",
+        imgUrl: "../imgs/browniesorvete.jpg",
         quantidade: 1,
     },
     {
         idProduto: 2,
         nome: "Brigadeiro de Paçoca",
         preco: "24,99",
-        imgUrl: "imgs/paçoca.jpg",
+        imgUrl: "../imgs/paçoca.jpg",
         quantidade: 1,
     },
 ];
@@ -164,7 +164,7 @@ outrosProdutos.map((item) => {
         </div>
         <div class="price">${item.preco}</div>
         <button id="candy12" type="submit" class="btn">
-            <a href="cart.html" onclick='adicionarCarrinho(${item.idProduto}, "catalago2")'>Adicionar ao carrinho</a>
+            <a href="../cart.html" onclick='adicionarCarrinho(${item.idProduto}, "catalago2")'>Adicionar ao carrinho</a>
         </button>
     </div >
 </div > `;

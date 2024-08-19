@@ -1,126 +1,98 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Melos Confeitaria</title>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <title>Melos Confeitaria</title>
+        <link
+            rel="shortcut icon"
+            href="imgs/logo.png"
+            type="Image/x-icon" />
+    </head>
 
-    <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    <body>
+        <!--CORPO DO NOSSO SITE-->
+        <div class="container right-panel-active">
+            <!-- Sign Up -->
+            <div class="container__form container--signup">
+                <form onsubmit="submitForm()" class="form" id="form1">
+                    <h2 class="form__title"><strong>Cadastre-se Já!</strong></h2>
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
+                    <label for="name"><strong>Nome:</strong></label>
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Nome"
+                        class="inputs" />
 
-  <body>
-    <!-- header section starts  -->
+                    <label for="senha"><strong>Senha:</strong></label>
+                    <input
+                        id="senha"
+                        type="password"
+                        placeholder="Senha"
+                        class="inputs" />
 
-    <header class="header">
-      <a href="index.html" class="logo"> <img src="imgs/logo.png" alt /> </a>
+                    <label for="email"><strong>Email:</strong></label>
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Email"
+                        class="inputs" />
 
-      <nav class="navbar">
-        <a href="#home"><strong>Home</strong></a>
-        <a href="#about"><strong>Sobre</strong></a>
-        <a href="#menu"><strong>Menu</strong></a>
-        <a href="#contacts"><strong>Contatos</strong></a>
-      </nav>
+                    <label for="aniversario"><strong>Idade:</strong></label>
+                    <input
+                        id="idade"
+                        type="number"
+                        placeholder="Idade"
+                        class="inputs" />
 
-      <div class="icons">
-        <button class="button">
-          <a href="cart.html">
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-          </a>
-        </button>
-      </div>
-    </header>
+                    <button class="btn" type="submit">
+                        <strong>Cadastrar-me</strong>
+                    </button>
+                </form>
+            </div>
 
-    <!-- header section ends -->
+            <!-- Sign In -->
+            <div class="container__form container--signin">
+                <form onsubmit="submitForm2()" class="form" id="form2">
+                    <h2 class="form__title"><strong>Entrar</strong></h2>
 
-    <!-- home section starts  -->
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input
+                        id="name2"
+                        type="text"
+                        placeholder="Nome"
+                        class="inputs" />
 
-    <section class="home" id="home">
-    </section>
+                    <label for="senha"><strong>Senha:</strong></label>
+                    <input
+                        id="senha2"
+                        type="password"
+                        placeholder="Senha"
+                        class="inputs" />
 
-    <!-- about section starts  -->
+                    <a href="#" class="link"><strong>Esqueceu sua senha?</strong>
+                    </a>
+                    <button class="btn" type="submit">
+                        <strong>Entrar</strong>
+                    </button>
+                </form>
+            </div>
 
-    <section class="about" id="about">
-      <h1 class="heading"><span>Sobre</span> Nós</h1>
-
-      <div class="row">
-        <div class="image">
-          <img src="imgs/quemsomos.avif" alt />
+            <!-- Overlay -->
+            <div class="container__overlay">
+                <div class="overlay">
+                    <div class="overlay__panel overlay--left">
+                        <button class="btn" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay__panel overlay--right">
+                        <button class="btn" id="signUp">Cadastrar-me</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="content">
-          <h3>O que torna a Melos Confeitaria especial?</h3>
-          <p>
-            Seja bem-vindo à Melos Confeitaria, um novo espaço gastronômico que
-            nasceu da paixão pela arte da confeitaria e do desejo de criar
-            experiências sensoriais únicas através dos sabores mais refinados.
-            Nossa empresa é mais do que uma confeitaria; é um refúgio para os
-            amantes da boa culinária, um lugar onde cada detalhe é
-            cuidadosamente pensado para proporcionar momentos de puro prazer. Na
-            Melos Confeitaria, a essência está na fusão da tradição com a
-            inovação. Nossos chefs confeiteiros, verdadeiros artistas
-            culinários, dedicam-se a aprimorar técnicas tradicionais, criando
-            assim deliciosas obras-primas que surpreendem o paladar. Utilizamos
-            ingredientes da mais alta qualidade, provenientes de fontes
-            confiáveis, para garantir que cada mordida seja uma experiência
-            inesquecível.
-          </p>
-          <a href="#menu" class="btn">Veja Nossas Opções </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- about section ends -->
-
-    <!-- menu section starts  -->
-
-    <section class="menu" id="menu">
-      <h1 class="heading">Nosso <span>Menu</span></h1>
-
-      <div class="box-container" id="containerCatalogo"></div>
-    </section>
-
-    <!-- menu section ends -->
-
-    <section class="products" id="products">
-      <h1 class="heading">Outros Produtos</h1>
-
-      <div class="box-container" id="containerCatalogo2"></div>
-    </section>
-
-    <!-- footer section starts  -->
-
-    <footer class="footer" id="contacts">
-      <!-- contact section starts  -->
-
-      <!-- contact section ends -->
-
-      <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-      </div>
-
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#about">Sobre</a>
-        <a href="#menu">Menu</a>
-        <a href="#contacts">Contatos</a>
-      </div>
-
-      <div class="credit">criado por <span>Davi Aragão</span></div>
-    </footer>
-
-    <!-- footer section ends -->
-
-    <!-- custom js file link  -->
-    <script src="script/script.js"></script>
-  </body>
+        <script src="script/index.js"></script>
+    </body>
 </html>
